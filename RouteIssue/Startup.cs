@@ -51,7 +51,11 @@ namespace RouteIssue
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
+	            routes.MapAreaRoute(
+					name: "Api",
+					areaName: "Api",
+		            template: "Api/{controller=Home}/{action=Index}/{id?}");
+				routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
