@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RouteIssue.Controllers.Api
 {
-	[Route("Api/Home")]
+	[Route("Api/Some")]
     public class SomeController : Controller
 	{
 		public IActionResult Get()
