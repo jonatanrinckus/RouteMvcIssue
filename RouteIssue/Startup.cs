@@ -54,7 +54,7 @@ namespace RouteIssue
 	            routes.MapAreaRoute(
 					name: "Api",
 					areaName: "Api",
-		            template: "Api/{controller=Home}/{action=Index}/{id?}");
+		            template: "Api/{controller}/{action?}/{id?}");
 				routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
